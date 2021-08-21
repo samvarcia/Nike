@@ -1,9 +1,17 @@
 import React, { Component } from "react";
+import Header from "../components/Header";
+import Catalog from "../components/Catalog";
 import "../assets/styles/main.css";
 
 class App extends Component {
   render() {
-    return <h1>NIKE</h1>;
+    return (
+      <div>
+        <Header />
+        <h1>Buy Nike's all-time bestsellers</h1>
+        <Catalog />
+      </div>
+    );
   }
 }
 

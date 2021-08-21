@@ -1,0 +1,15 @@
+.bag-container {
+  width: 150px;
+  padding: 10px;
+  background-color: #fff;
+  height: 35px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bag-container div {
+  display: flex;
+  font-weight: bold;
+}
