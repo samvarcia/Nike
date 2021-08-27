@@ -1,13 +1,11 @@
 import React from "react";
-import N0ne from "../assets/images/air-force-1-07-lv8-1.svg";
-import Card from "./Card";
 
-const Catalog = () => {
+function Catalog(props) {
   return (
-    <div>
-      <Card cover={N0ne} title="Nike Air Force 1 '07 LV8" price="110" />
-    </div>
+    <section>
+      <ul>{props.children}</ul>
+    </section>
   );
-};
+}
 
-export default Catalog;
+export { Catalog };

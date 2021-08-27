@@ -2,17 +2,20 @@ import React from "react";
 import FeatherIcon from "feather-icons-react";
 import "../assets/styles/components/Card.css";
 
-const Card = ({ cover, title, price }) => {
+function Card(props) {
   return (
     <div className="card">
-      <img src={cover} alt={title} />
-      <h2>{title}</h2>
+      <button type="button">
+        <FeatherIcon icon="shopping-bag" size="20" />
+      </button>
+      <img src={props.cover} alt={props.title} />
+      <h2>{props.title}</h2>
       <div className="priceTag">
         <FeatherIcon icon="dollar-sign" size="20" />
-        <p>{price}</p>
+        <p>{props.price}</p>
       </div>
     </div>
   );
-};
+}
 
-export default Card;
+export { Card };
