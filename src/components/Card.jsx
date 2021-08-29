@@ -4,7 +4,7 @@ import "../assets/styles/components/Card.css";
 
 function Card(props) {
   return (
-    <div className="card">
+    <li className="card">
       <button type="button">
         <FeatherIcon icon="shopping-bag" size="20" />
       </button>
@@ -14,7 +14,7 @@ function Card(props) {
         <FeatherIcon icon="dollar-sign" size="20" />
         <p>{props.price}</p>
       </div>
-    </div>
+    </li>
   );
 }
 
