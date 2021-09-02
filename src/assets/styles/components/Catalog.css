@@ -1,8 +1,10 @@
-ul {
-  margin: 0;
-  padding: 0 0 56px 0;
-  list-style: none;
+.Catalog {
+  margin: 5px;
+}
+
+.Catalog-container {
   display: grid;
   grid-template-columns: repeat(3, 33%);
   grid-template-rows: repeat(3, 33%);
+  gap: 20px;
 }
